@@ -43,7 +43,7 @@ The code base is in preparation and will be released soon...Stay tuned!
 
 ## Testing
 
-In this step, we use the trained neural network to retrieve the top-$k$ donors and evaluate their optimized MaxCut parameters on the MIS graphs via QAOA. We directly plug the optimized parameters and measure the quantum circuit for 1,000 shots. Then, the best set of parameters from each donors is selected.
+In this step, we use the trained neural network to retrieve the top-k donors and evaluate their optimized MaxCut parameters on the MIS graphs via QAOA. We directly plug the optimized parameters and measure the quantum circuit for 1,000 shots. Then, the best set of parameters from each donors is selected.
 
 We use two metrics to evaluate the transferability:
 - Mean best approximation ratio: $r$
