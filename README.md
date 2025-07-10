@@ -16,14 +16,14 @@ Our experimental results show that such parameter transfer can significantly red
 <img src="assets/title.png" alt="alt text" width="80%"/>
 </p>
 
-**Figure.** Overview of the parameter transfer procedure. First, QAOA is run on a quantum circuit to optimize for a *donor* COP (i.e. MaxCut) and retrieve the optimal parameter set $(\boldsymbol{\gamma}^*, \boldsymbol{\beta}^*)$. Next, those parameters are directly applied to the *acceptor* COP (i.e. MIS) without additional tuning.
+**Figure.** Overview of the parameter transfer procedure. First, QAOA is run on a quantum circuit to optimize for a *donor* COP (i.e. MaxCut) and retrieve the optimal parameter set $(\boldsymbol{\gamma}^{*}, \boldsymbol{\beta}^{*})$. Next, those parameters are directly applied to the *acceptor* COP (i.e. MIS) without additional tuning.
 
 ## Data Generation
 <p align="center">
 <img src="assets/data_gen.png" alt="alt text" width="80%"/>
 </p>
 
-**Figure.** During the data generation procedure, for each instance in the donor dataset $\mathcal{D}$, we train the QAOA circuit with $N$ random initializations $(\boldsymbol{\gamma}_1, \boldsymbol{\beta}_1) \dots (\boldsymbol{\gamma}_N, \boldsymbol{\beta}_N)$ on MaxCut. Then, we directly apply the $N$ optimized parameter sets $(\boldsymbol{\gamma}^*_1, \boldsymbol{\beta}^*_1) \dots (\boldsymbol{\gamma}^*_N, \boldsymbol{\beta}^*_N)$ to each MIS instance in the acceptor dataset $\mathcal{A}$ to retrieve the ground-truth transfer score, which is the average approximation ratios of the optimized MaxCut parameters on MIS.
+**Figure.** During the data generation procedure, for each instance in the donor dataset $\mathcal{D}$, we train the QAOA circuit with $N$ random initializations $(\boldsymbol{\gamma}_1, \boldsymbol{\beta}_1) \dots (\boldsymbol{\gamma}_N, \boldsymbol{\beta}_N)$ on MaxCut. Then, we directly apply the $N$ optimized parameter sets $(\boldsymbol{\gamma}^{*}_1, \boldsymbol{\beta}^{*}_1) \dots (\boldsymbol{\gamma}^{*}_N, \boldsymbol{\beta}^{*}_N)$ to each MIS instance in the acceptor dataset $\mathcal{A}$ to retrieve the ground-truth transfer score, which is the average approximation ratios of the optimized MaxCut parameters on MIS.
 
 **Dataset**
 
